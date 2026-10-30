@@ -1,0 +1,17 @@
+{
+  "description": "Save every Codex lifecycle event for the local hook dashboard.",
+  "hooks": {
+    "SessionStart": [{"hooks": [{"type":"command","command":"python3 hook_recorder.py","commandWindows":"py -3 hook_recorder.py"}]}],
+    "SessionEnd": [{"hooks": [{"type":"command","command":"python3 hook_recorder.py","commandWindows":"py -3 hook_recorder.py"}]}],
+    "PreToolUse": [{"hooks": [{"type":"command","command":"python3 hook_recorder.py","commandWindows":"py -3 hook_recorder.py"}]}],
+    "PermissionRequest": [{"hooks": [{"type":"command","command":"python3 hook_recorder.py","commandWindows":"py -3 hook_recorder.py"}]}],
+    "PostToolUse": [{"hooks": [{"type":"command","command":"python3 hook_recorder.py","commandWindows":"py -3 hook_recorder.py"}]}],
+    "PreCompact": [{"hooks": [{"type":"command","command":"python3 hook_recorder.py","commandWindows":"py -3 hook_recorder.py"}]}],
+    "PostCompact": [{"hooks": [{"type":"command","command":"python3 hook_recorder.py","commandWindows":"py -3 hook_recorder.py"}]}],
+    "UserPromptSubmit": [{"hooks": [{"type":"command","command":"python3 hook_recorder.py","commandWindows":"py -3 hook_recorder.py"}]}],
+    "SubagentStart": [{"hooks": [{"type":"command","command":"python3 hook_recorder.py","commandWindows":"py -3 hook_recorder.py"}]}],
+    "SubagentStop": [{"hooks": [{"type":"command","command":"python3 hook_recorder.py","commandWindows":"py -3 hook_recorder.py"}]}],
+    "Stop": [{"hooks": [{"type":"command","command":"python3 hook_recorder.py","commandWindows":"py -3 hook_recorder.py"}]}],
+    "Interrupt": [{"hooks": [{"type":"command","command":"python3 hook_recorder.py","commandWindows":"py -3 hook_recorder.py"}]}]
+  }
+}
